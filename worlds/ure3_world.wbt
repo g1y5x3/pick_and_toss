@@ -1,0 +1,81 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/apartment_structure/protos/Wall.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/drinks/protos/Can.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/universal_robots/protos/UR3e.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/devices/robotiq/protos/Robotiq3fGripper.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/Roughcast.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation 0.16851241459052846 0.11718040754220534 -0.9787095167704831 2.062505649526687
+  position 2.01245589460956 4.038872844986184 1.4693865360030995
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 5 5
+}
+Can {
+  hidden linearVelocity_0 8.089580395620245e-06 -8.921051824813566e-06 1.8461921525503652e-07
+  hidden angularVelocity_0 0.00028097799954761033 0.00025478994543040145 -7.058689882215542e-11
+  translation 0.5051446749689181 1.2840852564794616 0.03147529640919571
+  rotation 0.4018687359941253 0.5937814904196386 0.6970832523203498 2.80913153955448
+}
+Wall {
+  translation 0 1.25 0
+  name "wall1_1"
+  size 0.025 1 0.1
+  appearance Roughcast {
+    colorOverride 0 0.333333 1
+    textureTransform TextureTransform {
+      scale 2.4 1
+    }
+  }
+}
+Wall {
+  translation 1 1.5 0
+  name "wall1_2"
+  size 0.025 0.5 0.1
+  appearance Roughcast {
+    colorOverride 0 0.333333 1
+    textureTransform TextureTransform {
+      scale 2.4 1
+    }
+  }
+}
+Wall {
+  translation 0.5 0.75 0
+  name "wall1_3"
+  size 1 0.025 0.1
+  appearance Roughcast {
+    colorOverride 0 0.333333 1
+    textureTransform TextureTransform {
+      scale 2.4 1
+    }
+  }
+}
+Wall {
+  translation 0.5 1.75 0
+  name "wall1_4"
+  size 1 0.025 0.1
+  appearance Roughcast {
+    colorOverride 0 0.333333 1
+    textureTransform TextureTransform {
+      scale 2.4 1
+    }
+  }
+}
+UR3e {
+  translation 1 1 0
+  toolSlot [
+    Robotiq3fGripper {
+    }
+  ]
+}
