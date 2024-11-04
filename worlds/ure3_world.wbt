@@ -13,7 +13,7 @@ WorldInfo {
 }
 Viewpoint {
   orientation -0.21581377594452933 0.204526976246022 0.9547738633311156 1.5720887260893286
-  position 0.3559141787361465 -1.7641981940517668 1.8509121202988588
+  position 0.2670567534570928 -3.5486143912080994 2.6560298192391008
 }
 TexturedBackground {
 }
@@ -93,6 +93,7 @@ Robot {
 }
 UR3e {
   translation 1 1 0
+  controller "<none>"
   toolSlot [
     Robotiq3fGripper {
     }
