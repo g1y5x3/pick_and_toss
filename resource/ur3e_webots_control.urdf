@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<robot name="UR3e Arm">
+    <webots>
+        <plugin type="pick_and_toss.ur3e_driver.UR3eArmDriver" />
+    </webots>
+</robot>

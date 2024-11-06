@@ -89,11 +89,11 @@ Robot {
     }
   ]
   name "eyes"
-  controller "ure3_camera_controller"
+  controller "<none>"
 }
 UR3e {
   translation 1 1 0
-  controller "<none>"
+  controller "<extern>"
   toolSlot [
     Robotiq3fGripper {
     }

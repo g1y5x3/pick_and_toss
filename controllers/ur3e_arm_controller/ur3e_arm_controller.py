@@ -1,6 +1,4 @@
 from controller import Robot, Motor
-from math import pi, sin
-
 
 robot = Robot()
 
