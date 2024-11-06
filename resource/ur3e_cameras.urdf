@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<robot name="UR3e Eyes">
+    <device reference="camera1" type="Camera">
+        <ros>
+            <topicName>/camera</topicName>
+            <alwaysOn>true</alwaysOn>
+        </ros>
+    </device>
+</robot>
