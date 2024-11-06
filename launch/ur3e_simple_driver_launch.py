@@ -8,7 +8,7 @@ from webots_ros2_driver.webots_controller import WebotsController
 
 def generate_launch_description():
     package_dir = get_package_share_directory('pick_and_toss')
-    robot_description_path = os.path.join(package_dir, 'resource', 'ur3e_webots_control.urdf')
+    robot_description_path = os.path.join(package_dir, 'resource', 'ur3e_simple.urdf')
 
     webots = WebotsLauncher(
         world=os.path.join(package_dir, 'worlds', 'ur3e_world.wbt')
