@@ -2,7 +2,13 @@
 <robot name="UR3e Eyes">
     <device reference="camera1" type="Camera">
         <ros>
-            <topicName>/camera</topicName>
+            <topicName>/camera_left</topicName>
+            <alwaysOn>true</alwaysOn>
+        </ros>
+    </device>
+    <device reference="camera2" type="Camera">
+        <ros>
+            <topicName>/camera_right</topicName>
             <alwaysOn>true</alwaysOn>
         </ros>
     </device>

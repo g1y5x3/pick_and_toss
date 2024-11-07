@@ -89,7 +89,7 @@ Robot {
     }
   ]
   name "eyes"
-  controller "<none>"
+  controller "<extern>"
 }
 UR3e {
   translation 1 1 0

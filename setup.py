@@ -8,7 +8,7 @@ data_files.append(('share/' + package_name + '/launch',   ['launch/robot_launch.
 data_files.append(('share/' + package_name + '/worlds',   ['worlds/my_world.wbt',
                                                            'worlds/ur3e_world.wbt']))
 data_files.append(('share/' + package_name + '/resource', ['resource/my_robot.urdf',
-                                                           'resource/ur3e_simple.urdf']))
+                                                           'resource/ur3e_arms_simple.urdf', 'resource/ur3e_cameras.urdf']))
 data_files.append(('share/' + package_name, ['package.xml']))
 
 setup(

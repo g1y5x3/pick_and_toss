@@ -8,22 +8,31 @@ from webots_ros2_driver.webots_controller import WebotsController
 
 def generate_launch_description():
     package_dir = get_package_share_directory('pick_and_toss')
-    robot_description_path = os.path.join(package_dir, 'resource', 'ur3e_simple.urdf')
+    arm_description_path = os.path.join(package_dir, 'resource', 'ur3e_arms_simple.urdf')
+    camera_description_path = os.path.join(package_dir, 'resource', 'ur3e_cameras.urdf')
 
     webots = WebotsLauncher(
         world=os.path.join(package_dir, 'worlds', 'ur3e_world.wbt')
     )
 
-    ur3e_driver = WebotsController(
+    ur3e_arm_driver = WebotsController(
         robot_name='UR3e',
         parameters=[
-            {'robot_description': robot_description_path},
+            {'robot_description': arm_description_path},
+        ]
+    )
+
+    ur3e_cameras_driver = WebotsController(
+        robot_name="eyes",
+        parameters=[
+            {'robot_description': camera_description_path},
         ]
     )
 
     return LaunchDescription([
         webots,
-        ur3e_driver,
+        ur3e_arm_driver,
+        ur3e_cameras_driver,
         launch.actions.RegisterEventHandler(
             event_handler=launch.event_handlers.OnProcessExit(
                 target_action=webots,
