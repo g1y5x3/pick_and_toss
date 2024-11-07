@@ -1,6 +1,0 @@
-<?xml version="1.0" ?>
-<robot name="My robot">
-    <webots>
-        <plugin type="pick_and_toss.my_robot_driver.MyRobotDriver" />
-    </webots>
-</robot>
