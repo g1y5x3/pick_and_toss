@@ -1,15 +1,17 @@
 <?xml version="1.0" ?>
 <robot name="UR3e Eyes">
-    <device reference="camera1" type="Camera">
-        <ros>
-            <topicName>/camera_left</topicName>
-            <alwaysOn>true</alwaysOn>
-        </ros>
-    </device>
-    <device reference="camera2" type="Camera">
-        <ros>
-            <topicName>/camera_right</topicName>
-            <alwaysOn>true</alwaysOn>
-        </ros>
-    </device>
+    <webots>
+        <device reference="camera1" type="Camera">
+            <ros>
+                <topicName>/ur3e/cameras/camera_left</topicName>
+                <alwaysOn>true</alwaysOn>
+            </ros>
+        </device>
+        <device reference="camera2" type="Camera">
+            <ros>
+                <topicName>/ur3e/cameras/camera_right</topicName>
+                <alwaysOn>true</alwaysOn>
+            </ros>
+        </device>
+    </webots>
 </robot>

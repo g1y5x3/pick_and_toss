@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<robot name="/root/Documents/UR3e.urdf" xmlns:xacro="http://ros.org/wiki/xacro">
+<robot name="UR3e" xmlns:xacro="http://ros.org/wiki/xacro">
   <link name="base_link">
     <visual>
       <origin xyz="0 0 0.045" rpy="-3.141592 0 0"/>
